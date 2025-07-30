@@ -39,6 +39,18 @@
         $casado = false;
         var_dump($casado);
         print " O valor para casado é $casado <hr>"; // se for False, a variável não mostra nada no print, se for true, mostra 1.
+        
+        $vet = [6, 2.5, "Maria", 3, false];
+        var_dump($vet);
+        echo "<hr>";
+        // echo "<br>O vetor é $vet"; // não funciona sem converter para string. 
+        
+
+        class Pessoa {
+            private string $nome; // A string está restringida apenas na área da classe. 
+        }
+        $p = new Pessoa; // Chama a classe e imprime na váriavel p
+        var_dump($p);
     ?>
 </body>
 </html>
